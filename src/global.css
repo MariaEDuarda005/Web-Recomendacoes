@@ -1,0 +1,15 @@
+/* Estilização padrão da página inical*/
+
+/* Zerando a pré-formatação do navegador*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #000;
+}
+
+
