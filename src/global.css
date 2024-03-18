@@ -1,4 +1,8 @@
-/* Estilização padrão da página inical*/
+:root{
+  --cinza-claro: #dcdcdd;
+  --roxo-escuro: #1f0322;
+  --roxo-claro: #ab10bc;
+}
 
 /* Zerando a pré-formatação do navegador*/
 * {
@@ -9,7 +13,13 @@
 
 
 body {
-  background-color: #000;
+  background-color: var(--roxo-escuro);
+}
+
+body,input,textarea,button{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 

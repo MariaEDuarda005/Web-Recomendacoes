@@ -5,7 +5,7 @@ export function Cabecalho () {
         // a tag retornada será header
     return (
         <header className={estilos.conteiner}>
-            <h1>Recomendações</h1>
+            <p>Recomendações</p>
         </header>
     )
 }
