@@ -1,0 +1,5 @@
+.conteiner{
+    background-color: var(--cinza-claro);
+    display: flex;
+    padding: 10px;
+}
