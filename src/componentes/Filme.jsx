@@ -2,14 +2,17 @@ import estilos from './Filme.module.css'
 import poster from '../assets/poster.jpg'
 import { Card } from './Card'
 
-export function Filme(){
+export function Filme({propsFilme}){
+
+    const link = `https://image.tmdb.org/t/p/w400${propsFilme.poster_path}`
+
     return(
         <Card>
             <figure className={estilos.conteiner}>
-                <img src={poster}/>
-                <figcaption>Duna: Parte 2 (2024)</figcaption>
-                <p>Continua a explorar a viagem de Paul Atreides   que agora se une a Chani e aos Fremen para vingar a conspiração que destruiu a sua família. Ao enfrentar uma escolha entre o amor e o destino do universo, lutará para evitar o futuro terrível que só ele pode prever.</p>
-                <p>84</p>
+                <img src={link}/>
+                <figcaption>{ propsFilme.title }</figcaption>
+                <p>{propsFilme.overview}</p>
+                <p>Avaliação: {propsFilme.vote_average}</p>
             </figure>
         </Card>
     )
