@@ -3,6 +3,8 @@ import { Cabecalho } from '../componentes/Cabecalho'
 import { Lateral } from '../componentes/Lateral'
 // import { Conteudo } from '../componentes/Conteudo'
 import { Lista } from './Lista'
+import { Outlet } from 'react-router-dom'
+
 
 export function Inicial() {
 
@@ -10,9 +12,9 @@ export function Inicial() {
       <div className={estilos.gridConteiner}>
         <Cabecalho/>
         <Lateral/>
-        <Lista/>
+        <Outlet />
       </div>
   )
 }
 
-
+// Outlet - ponto de entrada para dentro do compente inicial

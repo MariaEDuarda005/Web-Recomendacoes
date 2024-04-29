@@ -40,6 +40,9 @@ export function Perfil(){
 
     return(
         <div className={estilos.conteiner}>
+
+            <p className={estilos.titulo}>Perfil</p>
+
             <form 
                 className={estilos.formulario}
                 onSubmit={handleSubmit(obterDadosFormulario)}

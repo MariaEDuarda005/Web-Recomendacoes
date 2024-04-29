@@ -1,0 +1,37 @@
+.conteiner{
+    background-color: var(--cinza-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagem{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    transition: 2s;
+}
+
+.imagem:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.titulo{
+    color: var(--roxo-escuro);
+    font-size: 2rem;
+    margin-bottom: 200px;
+}
+
+.textos{
+    margin-top: 100px;
+}
+
+.text{
+    font-size: .9rem;
+    color: var(--roxo-escuro);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,4 +1,6 @@
 import estilos from './Lateral.module.css'
+// biblioteca das rotas para criar links
+import { Link } from 'react-router-dom'
 
 export function Lateral () {
     // Considerando que esse componente é unicamente para a lateral 
@@ -21,9 +23,30 @@ export function Lateral () {
                 </div>       
             </header> 
 
-            {/* <section>
-                <p>Perfil</p>
-            </section> */}
+            <section>
+
+                <Link 
+                    className={estilos.botao}
+                    to='/inicial'
+                >
+                    Filmes
+                </Link>
+
+                <Link 
+                    className={estilos.botao}
+                    to='perfil'
+                >
+                    Perfil
+                </Link>
+
+                <Link 
+                    className={estilos.botao}
+                    to='sobre'
+                >
+                    Sobre
+                </Link>
+
+            </section>
 
         </aside>
 

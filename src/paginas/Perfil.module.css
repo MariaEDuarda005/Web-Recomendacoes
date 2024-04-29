@@ -1,21 +1,23 @@
 .conteiner{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: var(--cinza-claro);
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
-    background-color: var(--cinza-claro);
+    background-color: var(--cinza-escuro);
     padding: 30px;
     border-radius: 10px;
 }
 
 .campo{
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 6px;
 }
 
@@ -31,5 +33,11 @@ p{
     font-weight: 600;
     margin-top: -6px;
     margin-bottom: 1rem;
-    color: red;
+    /* color: red; */
+}
+
+.titulo {
+    color: var(--roxo-escuro);
+    font-size: 2rem;
+    margin-bottom: 25px;
 }

@@ -1,12 +1,13 @@
 import './global.css'
-import { Inicial } from './paginas/Inicial'
-import { Login } from './paginas/Login'
-import { Perfil } from './paginas/Perfil'
+import { BrowserRouter } from 'react-router-dom'
+import { Rotas } from './rotas/Rotas'
 
 export function App() {
   // app só está chamando o primera tela
   return (
-    <Perfil/>
+    <BrowserRouter>
+      <Rotas/>
+    </BrowserRouter>
   )
 }
 
